@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="css/site.css">
+    <script src="js/site.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Test your Typing Speed</h1>
+        <div>
+            <div class="scoreBoard">
+                <div id = "WPM" class="scoreBlock hidden">
+                    <div class="scoreTitle">WPM</div>
+                    <div class="scoreValue">8</div>
+                </div>
+
+                <div id = "CPM" class="scoreBlock hidden"">
+                    <div class="scoreTitle">CPM</div>
+                    <div class="scoreValue">41</div>
+                </div>
+
+                <div id = "Errors" class="scoreBlock">
+                    <div class="scoreTitle">Errors</div>
+                    <div class="scoreValue">0</div>
+                </div>
+                
+                <div id = "Time" class="scoreBlock">
+                    <div class="scoreTitle">Time</div>
+                    <div class="scoreValue">60s</div>
+                </div>
+                
+                <div id = "Accuracy" class="scoreBlock">
+                    <div class="scoreTitle">% Accuracy</div>
+                    <div class="scoreValue">100</div>
+                </div>
+            </div>
+            <div class = "typingDisplay" >Click on the area below to start the game.</div>
+            
+            <input type="text" placeholder="start typing here..." class="typingInput" onfocus="startGame()" oninput="spellCheck()">
+            <button id="restart" class="hidden" onclick="restart()">Restart</button>              
+        </div>
+    </div>
+</body>
+<script src="js/site.js" defer></script>
+
+</html>

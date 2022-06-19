@@ -1,0 +1,122 @@
+/*Body, Heading and container*/
+body {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: beige;
+}
+
+h1 {
+  color: #137ea7;
+  text-align: center;
+}
+
+.container {
+  padding: 3% 5% 5% 5%;
+  margin: auto;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+  height: fit-content;
+  border-radius: 4px;
+  max-width: 800px;
+  min-width: 550px;
+  background-color: cornsilk;
+}
+
+/* Score Board */
+.scoreBoard {
+  display: flex;
+  justify-content: center;
+}
+.scoreBlock {
+  margin: 10px;
+  display: inline-block;
+  border-color: transparent;
+  height: 80px;
+  width: 80px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  background-color: #137ea7;
+  color: white;
+}
+
+.scoreBlock .scoreTitle {
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.scoreBlock .scoreValue {
+  font-size: 3em;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/*Input Outputs*/
+
+.typingDisplay {
+  height: Auto;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px;
+  border-color: transparent;
+  background-color: #137ea7;
+  color: white;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.typingInput {
+  border-color: transparent;
+  height: 55px;
+  padding-left: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+  width: 99%;
+  font-size: 1.5em;
+  background-color: white;
+}
+
+.typingInputDisabled {
+  pointer-events: none;
+}
+
+/*Button */
+
+button {
+  background: #137ea7;
+  align-self: center;
+  justify-content: center;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  height: 40px;
+  font-weight: bold;
+  padding: 0 20px;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+button:hover {
+  transform: scale(1.01);
+}
+
+button:active {
+  box-shadow: none;
+}
+
+/*Text Style*/
+
+.correctText {
+  color: greenyellow;
+}
+
+.incorrectText {
+  color: red;
+  text-decoration: underline;
+}
